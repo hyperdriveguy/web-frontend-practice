@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+a {
+    color: red;
+}
+
+header, footer {
+    background-color: darkblue;
+    color: lightgray;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section {
+    padding: 1em;
+}
+
+#self-portrait {
+    float: right;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px black;
+}
