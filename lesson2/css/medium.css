@@ -1,0 +1,43 @@
+@media (min-width: 320px) {
+    #main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 640px) {
+    #main {
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    }
+
+    #alphagraphics {
+        grid-column: 1 / span 2;
+    }
+
+    #searx {
+        grid-column: 3 / span 2;
+    }
+
+    #gitdab {
+        grid-column: 2 / span 2;
+    }
+}
+
+@media (min-width: 960px) {
+    #main {
+        grid-template: none;
+        grid-template-areas: none;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #alphagraphics {
+        grid-column: 1 / span 1;
+    }
+
+    #searx {
+        grid-column: 2 / span 1;
+    }
+
+    #gitdab {
+        grid-column: 3 / span 1;
+    }
+}
