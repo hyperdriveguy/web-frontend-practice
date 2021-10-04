@@ -1,0 +1,19 @@
+@media (max-width: 40.5em) {
+    body {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 36.5em) {
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li{
+        margin: 3em 0;
+    }
+
+    body {
+        font-size: 1.1em;
+    }
+}
