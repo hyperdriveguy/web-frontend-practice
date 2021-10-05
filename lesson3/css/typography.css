@@ -1,0 +1,38 @@
+.site-header {
+    color: black;
+    background-color: #ffd382;
+    border-color: white;
+}
+
+.site-header h1 {
+    color: black;
+}
+
+.primary-nav {
+    color: black;
+    background-color: #00e3ff;
+    border-color: white;
+}
+
+.footer-nav {
+    color: #00e3ff;
+    text-decoration: underline;
+    border-color: white;
+}
+
+.head {
+    color: #ffd382;
+    border-color: white;
+}
+
+.yellowish {
+    background-color: #ffd382;
+    color: black;
+    border-color: white;
+}
+
+.blueish {
+    background-color: #00e3ff;
+    color: black;
+    border-color: white;
+}
