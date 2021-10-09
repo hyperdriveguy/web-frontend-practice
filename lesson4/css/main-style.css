@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Noto+Sans&family=Noto+Sans+Deseret&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.deseret {
+    font-family: 'Noto Sans Deseret', sans-serif;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#pre-nav {
+    display: flex;
+}
+
+#pre-nav img {
+    height: 100px;
+}
+
+#slogan p, #slogan h1 {
+    margin: 0.25em;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 1em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: black;
+    background-color: #00e3ff;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: #00e3ff;
+    background-color: #222222;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffd382;
+    font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4, h5, h6 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-style: italic;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+
+.cur-page a {
+    text-decoration: overline dotted;
+}
