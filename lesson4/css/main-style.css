@@ -16,12 +16,11 @@ main {
 }
 
 header {
-    display: flex;
     background-color: #222222;
     color: #ffd382;
 }
 
-header img {
+#logo {
     max-height: 100px;
 }
 
@@ -29,10 +28,14 @@ header img {
     margin: 0.25em;
 }
 
+#left-head {
+    display: flex;
+    padding: 1em;
+}
+
 nav {
     padding: 1em 0;
     background-color: #00e3ff;
-    position:sticky;
 }
 
 nav ul {
