@@ -1,0 +1,158 @@
+@media (max-width: 960px) {
+    main {
+        margin: 0 1em;
+    }
+}
+
+@media (min-width: 705px) {
+    #summary-float {
+        position: absolute;
+        max-width: 40%;
+        padding: 1em;
+        margin: 2em;
+        font-size: 0.8em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #article-img {
+        max-width: 30%;
+        max-height: 8em;
+        float: right;
+        overflow: hidden;
+    }
+
+    #forecast-indicators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /** Sticky navigation
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    **/
+    
+}
+
+@media (max-width: 704px) {
+    .responsive , .responsive ul{
+        display: block !important;
+        font-size: 1.2em;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    .collapsible {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu {
+        display: block;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    body {
+        font-size: 0.8em;
+    }
+
+    nav ul li{
+        margin: 2.5em auto;
+    }
+    
+    header, nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+
+    header {
+        border-bottom: 0.2em solid #00e3ff;
+    }
+
+    #article-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 625px) {    
+    #logo {
+        max-height: 75px;
+    }    
+}
+
+@media (min-width: 561px) {
+    #map {
+        margin-right: 4em;
+    }    
+}
+
+@media (max-width: 560px) {
+    #slogan {
+        font-size: 0.75em;
+    }
+    
+    #logo {
+        max-height: 50px;
+    }
+
+    #location-contact {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 506px) {
+    #logo {
+        width: 58px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 370px) {
+    #weekdays, #weekend {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 369px) and (min-width: 225px) {
+
+    #forecast-indicators {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 335px) {
+    #slogan {
+        font-size: 0.65em;
+    }
+    
+    #logo {
+        max-height: 50px;
+    }
+
+    #left-head {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 264px) {
+    #slogan {
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <title>Yeet Weather | Preston</title>
+        <meta name="description" content="Latest weather information for Preston, Idaho from Yeet Weather.">
+    </head>
+    <body>
+        <header>
+            <a class="menu" href="#">≡</a>
+            <div id="left-head">
+                <img id="logo" src="images/logo-100px.png" alt="logo">
+                <section id="slogan">
+                    <h1>Yeet Weather</h1>
+                    <p>Yeet Yourself Around The Rainy Days!</p>
+                </section>
+            </div>
+        </header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="cur-page"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <section id="weather-summary" class="collapsible">
+                <article id="summary-float">
+                    <h3>Weather Summary</h3>
+                    <p>
+                        High: 73℉
+                    </p>
+                    <p>
+                        Low: 47℉
+                    </p>
+                    <p>
+                        Wind: 2mph South
+                    </p>
+                    <p>
+                        <a href="#">Storm Center</a>
+                    </p>
+                </article>
+                <img id="hero-img" src="images/clear-skies.jpg" alt="clear skies">
+            </section>
+            <section id="forecast">
+                <h3>Five Day Forecast</h3>
+                <article id="forecast-indicators">
+                    <div id="weekdays">
+                        <div id="mon" class="forecast-day">
+                            <img src="images/sun-icon.png" alt="placeholder">
+                            <p>Monday</p>
+                        </div>
+                        <div id="tues" class="forecast-day">
+                            <img src="images/sun-icon.png" alt="placeholder">
+                            <p>Tuesday</p>
+                        </div>
+                        <div id="wed" class="forecast-day">
+                            <img src="images/clouds-icon.png" alt="placeholder">
+                            <p>Wednesday</p>
+                        </div>
+                        <div id="thurs" class="forecast-day">
+                            <img src="images/clouds-icon.png" alt="placeholder">
+                            <p>Thursday</p>
+                        </div>
+                    </div>
+                    <div id="weekend">
+                        <div id="fri" class="forecast-day">
+                            <img src="images/rain-icon.png" alt="placeholder">
+                            <p>Friday</p>
+                        </div>
+                        <div id="sat" class="forecast-day">
+                            <img src="images/clouds-icon.png" alt="placeholder">
+                            <p>Saturday</p>
+                        </div>
+                        <div id="sun" class="forecast-day">
+                            <img src="images/sun-icon.png" alt="placeholder">
+                            <p>Sunday</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h3>Placeholder Article</h3>
+                    <div id="featured-container" class="collapsible">
+                        <img id="article-img" src="images/storm.jpg" alt="lightning storm">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Adipisci non beatae autem perferendis nobis veritatis iusto incidunt quo
+                            sapiente suscipit veniam maxime doloribus quos ullam ex eos, similique, nihil est.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita, ea enim
+                            perferendis adipisci assumenda commodi amet dolor iste reiciendis nulla itaque.
+                            Maiores omnis hic magni. Sapiente quos doloribus itaque.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section id="location-contact">
+                <img id="map" src="images/preston-map.png" alt="map">
+                <div id="contact">
+                    <h3>Contact Information</h3>
+                    <p>📍 400 W 900 S Yeetburg, ID 88888</p>
+                    <p>☎️ (208) 420-4342</p>
+                    <p>✉️ inquiry@yeetweather.xyz</p>
+                    <div id="social">
+                        <a href="#"><img src="images/facebook-icon.png" alt="facebook social link"></a>
+                        <a href="#"><img src="images/twitter-icon.png" alt="twitter social link"></a>
+                        <a href="#"><img src="images/reddit-icon.png" alt="reddit social link"></a>
+                    </div>
+                </div>
+            </section>
+            <p>
+                <span id="cur-date"></span>
+            </p>
+        </footer>
+        <script src="js/date.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>
