@@ -8,3 +8,12 @@ let mod_date = document.lastModified;
 
 modified.innerHTML = `Last Modified: ${mod_date}`;
 copyright.innerHTML = cur_year;
+
+WebFont.load({
+    google: {
+        families: [
+            'Oswald',
+            'Ubuntu'
+        ]
+    }
+})

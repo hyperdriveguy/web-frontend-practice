@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: lime;
+}
+
+header, footer {
+    background-color: darkblue;
+    color: lightgray;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+section {
+    padding: 1em;
+}
+
+#self-portrait {
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px black;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+  }
