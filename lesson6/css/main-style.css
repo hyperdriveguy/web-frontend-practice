@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Noto+Sans&family=Noto+Sans+Deseret&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.deseret {
+    font-family: 'Noto Sans Deseret', sans-serif;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222222;
+    color: #ffd382;
+}
+
+#logo {
+    max-height: 100px;
+}
+
+#slogan p, #slogan h1 {
+    margin: 0.25em;
+}
+
+#left-head {
+    display: flex;
+    padding: 1em;
+}
+
+nav {
+    padding: 1em 0;
+    background-color: #00e3ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a, .menu {
+    padding: 1em;
+    margin: 0 0.5em;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: #00e3ff;
+    background-color: #222222;
+}
+
+.menu {
+    display: none;
+    float: right;
+    color: #00e3ff;
+}
+
+.cur-page a {
+    text-decoration: overline dotted;
+    font-weight: bolder;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffd382;
+    font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4, h5, h6 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-style: italic;
+}
+
+footer > p {
+    text-align: center;
+    font-style: italic;
+    background-color: #00e3ff;
+    color: black;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #222222;
+    margin: 0;
+    padding: 1em;
+}
+
+.forecast-day {
+    margin: 0.5em;
+    text-align: center;
+}
+
+#forecast-indicators img {
+    height: 50px;
+    padding: 0;
+}
+
+#hero-img img{
+    max-width: 100%;
+}
+
+#summary-float p, #summary-float h3 {
+    margin: 0;
+}
+
+#location-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    max-width: 200px;
+}
+
+#social {
+    display: flex;
+}
+
+#social a {
+    margin: 0.25em;
+}
+
+#social a img {
+    max-width: 50px;
+}
+
+article {
+    padding: 2em;
+    background-color: #222222;
+    border-radius: 4px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+section {
+    margin: 2em;
+}
+
+a {
+    color: #00e3ff;
+}
+
+a:hover {
+    color: #ffd382;
+}
+
+#img-size {
+    position: absolute;
+    right: 30%;
+    color: red;
+    font-size: 1.5em;
+}
