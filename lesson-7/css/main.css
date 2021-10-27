@@ -10,11 +10,11 @@ main {
 }
 
 img[data-src] {
-    filter: blur(0.5em);
+    filter: blur(0.75em);
   }
   
 .remove-blur {
     filter: blur(0em) !important;
-    transition: filter 0.5s;
+    transition: filter 1s;
   }
   
