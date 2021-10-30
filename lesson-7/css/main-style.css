@@ -181,8 +181,7 @@ a:hover {
 }
 
 .gallery img {
-    min-width: 0;
-    min-height: 0;
+    min-width: 100%;
     max-width: 100%;
 }
 
