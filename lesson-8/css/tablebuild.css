@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    box-shadow: 10px 13px 11px #628ca6;
+}
+
+table, th, td, caption {
+    border: thin solid lightgray;
+	border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    border-top: none;
+    font-size: 0.7em;
+    background-color: #7fb9c2;
+    box-shadow: 10px 7px 10px #628ca6;
+}
+
+td, th, caption {
+    padding: .5em
+}
+
+td, caption {
+    font-weight: 300;
+}
+
+thead tr:nth-child(2), tbody tr:nth-child(4) td:nth-child(3) {
+    color: white;
+    background-color: #628ca6;
+    font-weight: normal;
+}
+
+thead tr:first-child {
+    background-color: #7fb9c2;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+#black-friday {
+    font-style: italic;
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 200px) {
+    body {
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 160px) {
+    body {
+        font-size: 0.4em;
+    }
+}
