@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main-style.css">
         <link rel="stylesheet" type="text/css" href="css/medium.css">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="input-label">
                         <label for="zip">Zip code*</label>
-                        <input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)" id="zip" autocomplete="shipping postal-codep" required>
+                        <input type="number" name="zip" pattern="[0-9]{5}(-?[0-9]{4})?" id="zip" autocomplete="shipping postal-codep" required>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -65,7 +65,7 @@
                         <label for="storm-type">Storm type</label>
                         <input type="list" name="storm-type" list="storm-type-list" id="storm-type">
                         <datalist id="storm-type-list">
-                            <option value="Flash Flood">Select Region ...
+                            <option value="Flash Flood">
                             <option value="Hail">
                             <option value="Hurricane">
                             <option value="Thunderstorm">
