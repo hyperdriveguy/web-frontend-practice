@@ -35,7 +35,72 @@
             </ul>
         </nav>
         <main>
-
+            <form method="get" action="thanks.html" id="storm-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="input-label">
+                        <label for="full-name">Full name*</label>
+                        <input type="text" name="full-name" pattern="([A-Z]|[a-z])[a-z]+ (([A-Z]|[a-z])[a-z]+ ?)+" id="full-name" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="jon.doe@example.com" id="email">
+                    </div>
+                    <div class="input-label">
+                        <label for="phone">Phone number*</label>
+                        <input type="tel" name="phone" pattern="[0-9]{3} *-? *[0-9]{3} *-? *[0-9]{4}|\([0-9]{3}\) ?[0-9]{3} *- *[0-9]{4}" id="phone" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="zip">Zip code*</label>
+                        <input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)" id="zip" autocomplete="shipping postal-codep" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div class="input-label">
+                        <label for="storm-date">Storm date</label>
+                        <input type="date" name="storm-date" id="storm-date">
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-type">Storm type</label>
+                        <input type="list" name="storm-type" list="storm-type-list" id="storm-type">
+                        <datalist id="storm-type-list">
+                            <option value="Flash Flood">Select Region ...
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-severity">Storm severity</label>
+                        <div class="slider">
+                            <input type="range" name="storm-severity" value="5" min="1" max="10" step="1" oninput="updateSeverity(this.value)" onchange="updateSeverity(this.value)" id="storm-severity">
+                            <span id="severity-value">5</span>
+                        </div>
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-region">Storm region</label>
+                        <select name="storm-region" id="storm-region" onchange="">
+                            <option value="" disabled selected>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <div>User in danger</div>
+                        <label><input type="radio" name="user-danger" value="yes"> Yes</label>
+                        <label><input type="radio" name="user-danger" value="maybe"> Maybe</label>
+                        <label><input type="radio" name="user-danger" value="no"> No</label>
+                    </div>
+                </fieldset>
+                <fieldset class="paragraph-text">
+                    <legend>Additional comments</legend>
+                    <textarea name="additional-info" id="additional-info"></textarea>
+                </fieldset>
+                <input type="submit" value="Send" class="submit-button">
+            </form>
         </main>
         <footer>
             <section id="location-contact">
@@ -62,5 +127,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/lazyload.js"></script>
+        <script src="js/stormcenter.js"></script>
     </body>
 </html>

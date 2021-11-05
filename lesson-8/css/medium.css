@@ -39,6 +39,15 @@
     .gallery figure:hover {
         box-shadow: 0 0 1.5em gray;
     }
+
+    #storm-form .paragraph-text {
+        grid-column: 1/3;
+        margin: 0 10em;
+    }
+
+    .input-label {
+        justify-content:space-between;
+    }
     
     /** Sticky navigation
     nav {
@@ -98,6 +107,15 @@
 
     .gallery {
         grid-template-columns: 1fr 1fr;
+    }
+
+    #storm-form {
+        display: block;
+        font-size: 1.8em;
+    }
+
+    .input-label {
+        flex-direction: column;
     }
 }
 

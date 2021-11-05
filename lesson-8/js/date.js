@@ -78,14 +78,16 @@ function calcDateDiff(firstDate, secondDate) {
 const store = window.localStorage;
 const vistedOutput = document.querySelector('#last-visited');
 
-lastVisit = store.getItem('visited-gallery');
+if (vistedOutput != null) {
+    lastVisit = store.getItem('visited-gallery');
 
-if (lastVisit == null) {
-    vistedOutput.textContent = 'First Time Visiting Gallery';
-}
-else {
-    const lastVisitDate = new Date(lastVisit);
-    vistedOutput.textContent = calcDateDiff(lastVisitDate, cur_date);
-}
+    if (lastVisit == null) {
+        vistedOutput.textContent = 'First Time Visiting Gallery';
+    }
+    else {
+        const lastVisitDate = new Date(lastVisit);
+        vistedOutput.textContent = calcDateDiff(lastVisitDate, cur_date);
+    }
 
-store.setItem('visited-gallery', cur_date.toString())
+    store.setItem('visited-gallery', cur_date.toString())
+}

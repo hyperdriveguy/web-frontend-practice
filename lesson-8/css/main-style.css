@@ -139,8 +139,9 @@ footer {
     max-width: 200px;
 }
 
-#social {
+#social, .slider {
     display: flex;
+    justify-content:space-between;
 }
 
 #social a {
@@ -204,4 +205,52 @@ figcaption {
     padding: 0.5em;
     font-style: italic;
     text-align: center;
+}
+
+.paragraph-text label {
+    display: block;
+}
+
+.paragraph-text textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+#storm-form {
+    margin: 1em auto;
+    padding: 0;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1em 3em;
+}
+
+#storm-form fieldset {
+    width: 100%;
+    max-width: 920px;
+}
+
+label, fieldset {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    user-select: none;
+}
+
+.input-label {
+    display: flex;
+    margin: 0.5em 0;
+}
+
+.submit-button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    grid-column: 2/3;
+    justify-self: right;
 }
