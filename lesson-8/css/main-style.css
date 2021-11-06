@@ -224,6 +224,13 @@ figcaption {
     width: 100%;
     max-width: 920px;
     border-radius: 10px;
+    padding: 1em;
+    border: 2px dotted #00e3ff;
+}
+
+legend {
+    color: #ffd382;
+    margin: 0 auto;
 }
 
 label, fieldset {
@@ -237,8 +244,27 @@ label, fieldset {
 
 .submit-button {
     background-color: black;
-    color: white;
+    color: #ffd382;
     padding: 1em;
     grid-column: 2/3;
     justify-self: right;
+    border-color: #00e3ff;
+    border-radius: 5px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio div {
+    margin-bottom: 0.5em;
+}
+
+.radio label {
+    margin-left: 1em;
+}
+
+.required {
+    color: #ffd382;
 }

@@ -35,11 +35,12 @@
             </ul>
         </nav>
         <main>
+            <h2>Storm Center Report Form</h2>
             <form method="get" action="thanks.html" id="storm-form">
                 <fieldset>
                     <legend>Personal Information</legend>
                     <div class="input-label">
-                        <label for="full-name">Full name*</label>
+                        <label for="full-name">Full name<span class="required">*</span></label>
                         <input type="text" name="full-name" pattern="([A-Z]|[a-z])[a-z]+ (([A-Z]|[a-z])[a-z]+ ?)+" id="full-name" required>
                     </div>
                     <div class="input-label">
@@ -47,11 +48,11 @@
                         <input type="email" name="email" placeholder="jon.doe@example.com" id="email">
                     </div>
                     <div class="input-label">
-                        <label for="phone">Phone number*</label>
+                        <label for="phone">Phone number<span class="required">*</span></label>
                         <input type="tel" name="phone" pattern="[0-9]{3} *-? *[0-9]{3} *-? *[0-9]{4}|\([0-9]{3}\) ?[0-9]{3} *- *[0-9]{4}" id="phone" required>
                     </div>
                     <div class="input-label">
-                        <label for="zip">Zip code*</label>
+                        <label for="zip">Zip code<span class="required">*</span></label>
                         <input type="number" name="zip" pattern="[0-9]{5}(-?[0-9]{4})?" id="zip" autocomplete="shipping postal-codep" required>
                     </div>
                 </fieldset>
@@ -99,7 +100,7 @@
                     <legend>Additional comments</legend>
                     <textarea name="additional-info" id="additional-info"></textarea>
                 </fieldset>
-                <input type="submit" value="Send" class="submit-button">
+                <input type="submit" value="Send Report" class="submit-button">
             </form>
         </main>
         <footer>
