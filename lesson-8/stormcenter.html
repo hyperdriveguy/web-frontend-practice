@@ -53,7 +53,7 @@
                     </div>
                     <div class="input-label">
                         <label for="zip">Zip code<span class="required">*</span></label>
-                        <input type="number" name="zip" pattern="[0-9]{5}(-?[0-9]{4})?" id="zip" autocomplete="shipping postal-codep" required>
+                        <input type="number" name="zip" id="zip" required>
                     </div>
                 </fieldset>
                 <fieldset>
@@ -64,7 +64,7 @@
                     </div>
                     <div class="input-label">
                         <label for="storm-type">Storm type</label>
-                        <input type="list" name="storm-type" list="storm-type-list" id="storm-type">
+                        <input type="text" name="storm-type" list="storm-type-list" id="storm-type">
                         <datalist id="storm-type-list">
                             <option value="Flash Flood">
                             <option value="Hail">

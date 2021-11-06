@@ -3,6 +3,5 @@ function updateSeverity(num) {
 }
 
 const slider = document.querySelector('.slider input');
-console.log(slider.value);
 
 window.addEventListener('load', () => {updateSeverity(slider.value)});
