@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 1rem;
+}
+
+h1, h2 {
+    font-family: cursive, serif;
+}
+
+header, footer, .cards > section:hover {
+    background-color: #222;
+    padding: 1rem;
+    box-shadow: 0 0 20px gray;
+}
+
+header {
+    border-radius: 0 0 1rem 1rem;
+}
+
+footer {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.cards > section {
+    background-color: #112;
+    border: 2px solid navy;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.cards section img {
+    max-width: 347px;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.cards {
+    margin: 1rem;
+}
+
+@media (min-width: 529px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (min-width: 785px) {
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media (min-width: 1042px) {
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
