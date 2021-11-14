@@ -26,6 +26,7 @@ fetch(townData)
         townPop.textContent = `Population: ${town.currentPopulation}`;
         townRain.textContent = `Average Rainfall: ${town.averageRainfall}`;
         townImg.src = `images/${town.photo.split('.')[0]}.webp`;
+        townImg.alt = town.name;
 
         textContainer.appendChild(townName);
         textContainer.appendChild(townMotto);
