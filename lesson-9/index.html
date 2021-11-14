@@ -26,17 +26,35 @@
         </header>
         <nav id="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li class="cur-page"><a href="#">Home</a></li>
+                <li><a href="../lesson5.1/preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li class="cur-page"><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="../lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
+        <picture id="hero-img">
+            <source srcset="images/hero-large.jpg" media="(min-width: 705px)">
+            <source srcset="images/hero-medium.jpg" media="(min-width: 336px)">
+            <img src="images/hero-small.jpg" alt="hero image">
+        </picture>
         <main>
-            <h2>Storm Center Report Form</h2>
-
+            <section class="towns">
+                <!--This area is populated from json-->
+            </section>
+            <section>
+                <h2>
+                    National Weather Service Advisories
+                </h2>
+                <article>
+                    <h3>No Advisory</h3>
+                    <p>
+                        There are no weather advisories for the state of Idaho at this time.
+                        See the <a href="https://www.weather.gov/" target="_blank">NWS Website</a> for updates as they happen.
+                    </p>
+                </article>
+            </section>
         </main>
         <footer>
             <section id="location-contact">
@@ -63,6 +81,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/lazyload.js"></script>
-        <script src="js/stormcenter.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>

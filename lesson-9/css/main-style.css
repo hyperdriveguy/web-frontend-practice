@@ -141,7 +141,7 @@ footer {
 
 #social, .slider {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 #social a {
@@ -268,3 +268,17 @@ label, fieldset {
 .required {
     color: #ffd382;
 }
+
+.towns {
+    text-align: center;
+}
+
+.motto {
+    color: #00e3ff;
+    font-style: italic;
+}
+
+.towns img {
+    width: 100%;
+}
+

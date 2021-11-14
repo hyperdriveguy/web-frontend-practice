@@ -4,6 +4,27 @@
     }
 }
 
+@media (min-width: 830px) {
+    .towns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+        background-color: #00e3ff;
+        padding: 1em;
+    }
+
+    .towns article {
+        border: #ffd382 solid 2px;
+        box-shadow: 10px 10px 10px #222;
+    }
+}
+
+@media (max-width: 829px) {
+    .towns article {
+        margin: 1em 0;
+    }
+}
+
 @media (min-width: 792px) {
     #storm-form {
         margin: 1em auto;
@@ -158,6 +179,28 @@
     #map {
         margin-right: 4em;
     }
+}
+
+@media (min-width: 561px) and (max-width: 829px) {
+    .towns article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .towns article div {
+        padding: 1rem;
+    }
+
+    .towns article:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .towns img {
+        height: fit-content;
+        max-width: 50%;
+    }
+    
 }
 
 @media (max-width: 560px) {
