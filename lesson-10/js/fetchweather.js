@@ -1,8 +1,8 @@
 const API_KEY = '4e7df82b9420e465923c0a77036ca26a';
 // Preston Town ID
 const townID = '5604473';
-const apiUrlCurrent = `http://api.openweathermap.org/data/2.5/weather?id=${townID}&units=imperial&appid=${API_KEY}`;
-const apiUrlForecast = `http://api.openweathermap.org/data/2.5/forecast?id=${townID}&units=imperial&appid=${API_KEY}`;
+const apiUrlCurrent = `https://api.openweathermap.org/data/2.5/weather?id=${townID}&units=imperial&appid=${API_KEY}`;
+const apiUrlForecast = `https://api.openweathermap.org/data/2.5/forecast?id=${townID}&units=imperial&appid=${API_KEY}`;
 
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
