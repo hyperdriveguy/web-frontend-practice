@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <title>Yeet Weather | Home</title>
+        <meta name="description" content="Yeet Weather home page.">
+    </head>
+    <body>
+        <header>
+            <a class="menu" href="#">≡</a>
+            <div id="left-head">
+                <picture id="logo">
+                    <source srcset="images/logo-100px.webp" media="(min-width: 508px)">
+                    <img src="images/placeholder.webp" data-src="images/logo-compact.webp" alt="logo">
+                </picture>
+                <section id="slogan">
+                    <h1>Yeet Weather</h1>
+                    <p>Yeet Yourself Around The Rainy Days!</p>
+                </section>
+            </div>
+        </header>
+        <nav id="main-nav">
+            <ul>
+                <li class="cur-page"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <picture id="hero-img">
+            <source srcset="images/hero-large.jpg" media="(min-width: 705px)">
+            <source srcset="images/hero-medium.jpg" media="(min-width: 336px)">
+            <img src="images/placeholder.webp" data-src="images/hero-small.jpg" alt="hero image">
+        </picture>
+        <main>
+            <section class="towns">
+                <!--This area is populated from json-->
+            </section>
+            <section>
+                <h2>
+                    National Weather Service Advisories
+                </h2>
+                <article>
+                    <h3>No Advisory</h3>
+                    <p>
+                        There are no weather advisories for the state of Idaho at this time.
+                        See the <a href="https://www.weather.gov/" target="_blank">NWS Website</a> for updates as they happen.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section id="location-contact">
+                <a href="https://www.openstreetmap.org/relation/121285">
+                    <img id="map" src="images/placeholder.webp" data-src="images/preston-map.webp" alt="map">
+                </a>
+                <div id="contact">
+                    <h3>Contact Information</h3>
+                    <p>📍 400 W 900 S Yeetburg, ID 88888</p>
+                    <p>☎️ (208) 420-4342</p>
+                    <p>✉️ inquiry@yeetweather.xyz</p>
+                    <div id="social">
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/facebook-icon.webp" alt="facebook social link"></a>
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/twitter-icon.webp" alt="twitter social link"></a>
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/reddit-icon.webp" alt="reddit social link"></a>
+                    </div>
+                </div>
+            </section>
+            <p>
+                <span id="cur-date"></span>
+            </p>
+        </footer>
+        <script src="js/date.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/lazyload.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

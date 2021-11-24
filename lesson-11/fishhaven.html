@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <title>Yeet Weather | Fish Haven</title>
+        <meta name="description" content="Latest weather information for Preston, Idaho from Yeet Weather.">
+    </head>
+    <body>
+        <header>
+            <a class="menu" href="#">≡</a>
+            <div id="left-head">
+                <picture id="logo">
+                    <source srcset="images/logo-100px.webp" media="(min-width: 508px)">
+                    <img src="images/logo-compact.webp" alt="logo">
+                </picture>
+                <section id="slogan">
+                    <h1>Yeet Weather</h1>
+                    <p>Yeet Yourself Around The Rainy Days!</p>
+                </section>
+            </div>
+        </header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="cur-page"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Fish Haven, Idaho</h2>
+            <section id="weather-summary" class="collapsible">
+                <article id="summary-float">
+                    <h3>Weather Summary</h3>
+                    <p>
+                        Currently: <span id="sky-condition"></span>
+                    </p>
+                    <p>
+                        High: <span id="high-temp"></span>
+                    </p>
+                    <p>
+                        Wind Chill: <span id="wind-chill"></span>
+                    </p>
+                    <p>
+                        Humidity: <span id="humidity"></span>
+                    </p>
+                    <p>
+                        Wind Speed: <span id="wind-speed"></span>
+                    </p>
+                    <p>
+                        <a href="#">Storm Center</a>
+                    </p>
+                </article>
+                <a href="images/wdd230_image_franklinOriginal.jpeg">
+                    <picture id="hero-img">
+                        <source srcset="images/wdd230_image_franklinLarge.jpeg" media="(min-width: 705px)">
+                        <source srcset="images/wdd230_image_franklinMedium.jpeg" media="(min-width: 546px)">
+                        <img src="images/wdd230_image_franklinSmall.jpeg" alt="responsive image">
+                    </picture>
+                </a>
+            </section>
+            <section id="forecast">
+                <h3>Five Day Forecast</h3>
+                <article id="forecast-indicators">
+                    <!--Forecast part 1-->
+                    <div id="forecast-first-half">
+                    </div>
+                    <!--Forecast part 2-->
+                    <div id="forecast-second-half">
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h3>Placeholder Article</h3>
+                    <div id="featured-container" class="collapsible">
+                        <img id="article-img" src="images/storm.jpg" alt="lightning storm">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Adipisci non beatae autem perferendis nobis veritatis iusto incidunt quo
+                            sapiente suscipit veniam maxime doloribus quos ullam ex eos, similique, nihil est.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita, ea enim
+                            perferendis adipisci assumenda commodi amet dolor iste reiciendis nulla itaque.
+                            Maiores omnis hic magni. Sapiente quos doloribus itaque.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section id="location-contact">
+                <a href="https://www.openstreetmap.org/relation/121285">
+                    <img id="map" src="images/preston-map.webp" alt="map">
+                </a>
+                <div id="contact">
+                    <h3>Contact Information</h3>
+                    <p>📍 400 W 900 S Yeetburg, ID 88888</p>
+                    <p>☎️ (208) 420-4342</p>
+                    <p>✉️ inquiry@yeetweather.xyz</p>
+                    <div id="social">
+                        <a href="#"><img src="images/facebook-icon.webp" alt="facebook social link"></a>
+                        <a href="#"><img src="images/twitter-icon.webp" alt="twitter social link"></a>
+                        <a href="#"><img src="images/reddit-icon.webp" alt="reddit social link"></a>
+                    </div>
+                </div>
+            </section>
+            <p>
+                <!--Fish Haven uses Paris weather data.-->
+                <span id="cur-date"></span><span id="town-id">5603240</span>
+            </p>
+        </footer>
+        <script src="js/date.js"></script>
+        <script src="js/fetchweather.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/lazyload.js"></script>
+    </body>
+</html>

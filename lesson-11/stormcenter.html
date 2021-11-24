@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main-style.css">
+        <link rel="stylesheet" type="text/css" href="css/medium.css">
+        <title>Yeet Weather | Storm Center</title>
+        <meta name="description" content="Yeet Weather storm center.">
+    </head>
+    <body>
+        <header>
+            <a class="menu" href="#">≡</a>
+            <div id="left-head">
+                <picture id="logo">
+                    <source srcset="images/logo-100px.webp" media="(min-width: 508px)">
+                    <img src="images/logo-compact.webp" alt="logo">
+                </picture>
+                <section id="slogan">
+                    <h1>Yeet Weather</h1>
+                    <p>Yeet Yourself Around The Rainy Days!</p>
+                </section>
+            </div>
+        </header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="cur-page"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Storm Center Report Form</h2>
+            <form method="get" action="thanks.html" id="storm-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="input-label">
+                        <label for="full-name">Full name<span class="required">*</span></label>
+                        <input type="text" name="full-name" pattern="([A-Z]|[a-z])[a-z]+ (([A-Z]|[a-z])[a-z]+ ?)+" id="full-name" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="jon.doe@example.com" id="email">
+                    </div>
+                    <div class="input-label">
+                        <label for="phone">Phone number<span class="required">*</span></label>
+                        <input type="tel" name="phone" pattern="[0-9]{3} *-? *[0-9]{3} *-? *[0-9]{4}|\([0-9]{3}\) ?[0-9]{3} *- *[0-9]{4}" id="phone" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="zip">Zip code<span class="required">*</span></label>
+                        <input type="number" name="zip" id="zip" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div class="input-label">
+                        <label for="storm-date">Storm date</label>
+                        <input type="date" name="storm-date" id="storm-date">
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-type">Storm type</label>
+                        <input type="text" name="storm-type" list="storm-type-list" id="storm-type">
+                        <datalist id="storm-type-list">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-severity">Storm severity</label>
+                        <div class="slider">
+                            <input type="range" name="storm-severity" value="5" min="1" max="10" step="1" oninput="updateSeverity(this.value)" onchange="updateSeverity(this.value)" id="storm-severity">
+                            <span id="severity-value">5</span>
+                        </div>
+                    </div>
+                    <div class="input-label">
+                        <label for="storm-region">Storm region</label>
+                        <select name="storm-region" id="storm-region" onchange="">
+                            <option value="" disabled selected>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <div>User in danger</div>
+                        <label><input type="radio" name="user-danger" value="yes"> Yes</label>
+                        <label><input type="radio" name="user-danger" value="maybe"> Maybe</label>
+                        <label><input type="radio" name="user-danger" value="no"> No</label>
+                    </div>
+                </fieldset>
+                <fieldset class="paragraph-text">
+                    <legend>Additional comments</legend>
+                    <textarea name="additional-info" id="additional-info"></textarea>
+                </fieldset>
+                <input type="submit" value="Send Report" class="submit-button">
+            </form>
+        </main>
+        <footer>
+            <section id="location-contact">
+                <a href="https://www.openstreetmap.org/relation/121285">
+                    <img id="map" src="images/placeholder.webp" data-src="images/preston-map.webp" alt="map">
+                </a>
+                <div id="contact">
+                    <h3>Contact Information</h3>
+                    <p>📍 400 W 900 S Yeetburg, ID 88888</p>
+                    <p>☎️ (208) 420-4342</p>
+                    <p>✉️ inquiry@yeetweather.xyz</p>
+                    <div id="social">
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/facebook-icon.webp" alt="facebook social link"></a>
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/twitter-icon.webp" alt="twitter social link"></a>
+                        <a href="#"><img src="images/placeholder.webp" data-src="images/reddit-icon.webp" alt="reddit social link"></a>
+                    </div>
+                </div>
+            </section>
+            <p>
+                <span id="cur-date"></span>
+            </p>
+        </footer>
+        <script src="js/date.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/lazyload.js"></script>
+        <script src="js/stormcenter.js"></script>
+    </body>
+</html>
