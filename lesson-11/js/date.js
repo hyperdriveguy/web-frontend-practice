@@ -34,3 +34,55 @@ if (cur_weekday == 5 && document.querySelector('#town-id').textContent == '56044
 
     body_node.insertBefore(pancake_container, body_node.firstChild);
 }
+
+// Check days since last visit
+function formatVisit(unit, amount) {
+    return 'Last Visited: ' + amount + ' ' + unit + ' ago';
+}
+
+function calcDateDiff(firstDate, secondDate) {
+    const milsPassed = secondDate.getTime() - firstDate.getTime();
+    const secsPassed = Math.floor(milsPassed / 1000);
+    const minsPassed = Math.floor(secsPassed / 60);
+    const hoursPassed = Math.floor(minsPassed / 60);
+    const daysPassed = Math.floor(hoursPassed / 24);
+    const monthsPassed = Math.floor(daysPassed / 30);
+    const yearsPassed = Math.floor(monthsPassed / 12);
+
+    if (yearsPassed > 0) {
+        return formatVisit('years', yearsPassed);
+    }
+    else if (monthsPassed > 0) {
+        return formatVisit('months', monthsPassed);
+    }
+    else if (daysPassed > 0) {
+        return formatVisit('days', daysPassed);
+    }
+    else if (hoursPassed > 0) {
+        return formatVisit('hours', hoursPassed);
+    }
+    else if (minsPassed > 0) {
+        return formatVisit('minutes', minsPassed);
+    }
+    else if (secsPassed > 0) {
+        return formatVisit('seconds', secsPassed);
+    }
+    else {
+        return formatVisit('ms', milsPassed) + ' (Just Barely Visited)';
+    }
+}
+
+const store = window.localStorage;
+const vistedOutput = document.querySelector('#last-visited');
+
+lastVisit = store.getItem('visited-gallery');
+
+if (lastVisit == null) {
+    vistedOutput.textContent = 'First Time Visiting';
+}
+else {
+    const lastVisitDate = new Date(lastVisit);
+    vistedOutput.textContent = calcDateDiff(lastVisitDate, cur_date);
+}
+
+store.setItem('visited-gallery', cur_date.toString())
