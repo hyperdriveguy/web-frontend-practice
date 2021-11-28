@@ -285,3 +285,12 @@ label, fieldset {
 #town-id {
     display: none;
 }
+
+#events {
+    text-align: center;
+}
+
+
+#article-img {
+    margin: 1em;
+}

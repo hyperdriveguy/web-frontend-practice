@@ -7,7 +7,7 @@ document.querySelector('#cur-date').innerHTML = formatted_day;
 
 const cur_weekday = cur_date.getDay();
 
-if (cur_weekday == 5) {
+if (cur_weekday == 5 && document.querySelector('#town-id').textContent == '5604473') {
     const body_node = document.querySelector('.menu').parentNode.parentNode;
 
     const pancake_container = document.createElement('div');
