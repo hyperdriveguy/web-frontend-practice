@@ -1,0 +1,23 @@
+main {
+    max-width: 960px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
