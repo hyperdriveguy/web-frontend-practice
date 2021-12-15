@@ -6,24 +6,50 @@ body {
     background-color: black;
 }
 
+.businesses {
+    display: grid;
+    gap: 1em;
+}
+
+.businesses article {
+    max-width: 650px;
+}
+
+.businesses article p {
+    padding: 0 1em 1em;
+}
+
+.businesses article h3 {
+    padding: 0 1em;
+}
+
 img {
     max-width: 100%;
 }
 
 nav {
     background-color: navy;
+    font-size: larger;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     padding: 0;
+    margin-bottom: 0;
 }
 
 nav ul li {
     padding: 1em;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 5px 10px gray;
 }
 
 nav ul li a {
@@ -53,10 +79,29 @@ h1, h2, h3, h4, h5, h6 {
 
 article {
     background-color: navy;
-    max-width: 650px;
 }
 
 footer {
     padding: 0.25em 1em 1em 1em;
     background-color: navy;
+}
+
+.social img {
+    margin: 1em;
+}
+
+#call-to-action p {
+    margin: 2em;
+}
+
+#call-to-action a {
+    background-color: navy;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+#call-to-action a:hover {
+    background-color: blue;
 }

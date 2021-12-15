@@ -11,8 +11,45 @@
 /* Desktop View */
 @media (min-width: 720px) {
 
-    nav {
-        font-size: larger;
+    .businesses {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #call-to-action {
+        font-size: 0.8em;
+        padding: 1em;
+        margin-left: 20%;
+        background-color: gold;
+        color: black;
+        position: absolute;
+        top: 13rem;
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    #call-to-action h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Tablet and Desktop views */
+@media (min-width: 476px) {
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .social {
+        margin: 1em;
+        text-align: center;
     }
 
 }
@@ -20,9 +57,14 @@
 /* Tablet and Mobile view */
 @media (max-width: 719px) {
 
+    body {
+        font-size: 0.9em;
+    }
+
     nav ul {
         flex-direction: column;
         padding: 1em;
+        align-content: left;
     }
 
     nav ul li {
@@ -35,14 +77,50 @@
         border-radius: 5px;
     }
 
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-content: top;
+        text-align: left;
+        margin: 2em;
+    }
+
+    .menu {
+        font-size: 5em;
+        text-decoration: none;
+    }
+
+    .responsive {
+        display: none;
+    }
+
+}
+
+/* Tablet view */
+@media (min-width: 476px)  and (max-width: 719px) {
+
+    .businesses {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #my-pc-er {
+        grid-column: 1 / 3;
+    }
+
+    #baby-swag {
+        grid-column:  3 / 5;
+    }
+
+    #game-pulse {
+        grid-row: 2 / span 1;
+        grid-column: 2 / 4;
+    }
+
 }
 
 /* Mobile view */
 @media (max-width: 475px) {
-
-    body {
-        font-size: 0.9em;
-    }
 
     .businesses {
         display: flex;
@@ -55,12 +133,8 @@
         margin: 1em 0;
     }
 
-    .businesses article p {
-        padding: 0 1em 1em;
-    }
-
-    .businesses article h3 {
-        padding: 0 1em;
+    .contact, .social {
+        text-align: center;
     }
 
 }
