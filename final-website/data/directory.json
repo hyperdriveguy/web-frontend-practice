@@ -1,0 +1,20 @@
+{
+	'MY-PC-ER': {
+		'contact': {
+			'phone': '208-856-0435',
+			'email': 'help@mypcer.com'
+		},
+		'logo': 'https://cdn-akaci.nitrocdn.com/hlsnWJICPRyuXKIcLYznayTvWJYOtXjt/assets/static/optimized/rev-d128ff7/wp-content/uploads/Asset-32-small.png',
+		'website': 'https://mypcer.com/'
+	},
+	'QuisTech': {
+		'contact': {
+			'phone': '208-656-5805',
+			'email': ''
+		},
+		'logo': 'https://lh3.googleusercontent.com/0uQodiy0sJIpNZP2YsO9IfzqozcSLP-W2Z7sxEBX8p5QMBf12-9sXCftG8fGbfqFnw58F_PD=w1080-h608-p-no-v0',
+		'website': 'https://quistechrepair.business.site/'
+	},
+	
+		
+}
