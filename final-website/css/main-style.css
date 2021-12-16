@@ -105,3 +105,100 @@ footer {
 #call-to-action a:hover {
     background-color: blue;
 }
+
+table {
+    margin: 2em auto;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 0.5em;
+    text-align: center;
+}
+
+section > img {
+    border-radius: 10px;
+}
+
+.business-card-container {
+
+    margin: 1em 0;
+}
+
+.business-card {
+    background-color: white;
+    color: #222;
+    border: 2px solid #444;
+    padding: 1em;
+    font-size: 0.9em;
+    max-width: 310px;
+}
+
+.business-card {
+    margin: 1em 0;
+}
+
+.business-card > img {
+    max-height: 4em;
+}
+
+.business-card a {
+    color: blue;
+}
+
+.force-list {
+    display: block !important;
+}
+
+form,fieldset {
+    margin: 1em auto;
+}
+
+fieldset {
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.input-label, .extended-input-label {
+    margin: 0.75em auto;
+}
+
+.input-label label {
+    margin-right: 2em;
+}
+
+.extended-input-label label {
+    margin-bottom: 0.75em;
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.submit-button {
+    margin-top: 1em;
+    padding: 0.5em;
+    max-width: 50%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.cur-weather, .forecast-weather {
+    padding: 0.5em;
+    margin: 1em auto;
+    text-align: center;
+}

@@ -36,6 +36,10 @@
         padding: 0;
     }
 
+    .business-card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
 /* Tablet and Desktop views */
@@ -50,6 +54,25 @@
     .social {
         margin: 1em;
         text-align: center;
+    }
+
+    .business-card-container {
+        display: grid;
+        gap: 0 1em;
+    }
+
+    .input-label {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info-map {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    iframe {
+        margin-left: 2em;
     }
 
 }
@@ -94,6 +117,18 @@
         display: none;
     }
 
+    table {
+        font-size: 0.75em;
+    }
+
+    tr {
+        display: block; float: left;
+    }
+
+    th, td {
+        display: block;
+    }
+
 }
 
 /* Tablet view */
@@ -117,6 +152,10 @@
         grid-column: 2 / 4;
     }
 
+    .business-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 /* Mobile view */
@@ -137,4 +176,30 @@
         text-align: center;
     }
 
+    .national-data {
+        display: none;
+    }
+
+    .view-selector {
+        display: none;
+    }
+
+    .input-label label {
+        display: block;
+    }
+}
+
+@media (max-width: 345px) {
+
+    body {
+        font-size: 0.7em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    .county-data {
+        display: none;
+    }
 }

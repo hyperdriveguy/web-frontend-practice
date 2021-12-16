@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main-style.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <title>Rexburg Chamber of Commerce</title>
+    <meta name="description" content="Rexburg Chamber of Commerce home page.">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1>Rexburg<br>Chamber of Commerce</h1>
+            <a class="menu" href="#">≡</a>
+        </div>
+        <nav class="responsive">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rexburg.html">Rexburg</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="images/downtown-rexburg.jpg" alt="Downtown Rexburg">
+    </header>
+    <main>
+        <form class="flex-col" method="get" action="thanks.html" id="join-form">
+            <fieldset>
+                <legend>Personal information</legend>
+                <div class="input-label">
+                    <label for="first-name">First name<span class="required">*</span></label>
+                    <input type="text" name="first-name" pattern="([A-Z]|[a-z])[a-z]+" id="first-name" required>
+                </div>
+                <div class="input-label">
+                    <label for="last-name">Last name<span class="required">*</span></label>
+                    <input type="text" name="last-name" pattern="([A-Z]|[a-z])[a-z]+" id="last-name" required>
+                </div>
+                <div class="input-label">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" pattern="([A-Z]|[a-z])[a-z]+" id="title">
+                </div>
+                <div class="input-label">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" name="email" placeholder="jon.doe@example.com" id="email" required>
+                </div>
+                <div class="input-label">
+                    <label for="phone">Cellphone number</label>
+                    <input type="tel" name="phone" pattern="[0-9]{3} *-? *[0-9]{3} *-? *[0-9]{4}|\([0-9]{3}\) ?[0-9]{3} *- *[0-9]{4}" id="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Business information</legend>
+                <div class="input-label">
+                    <label for="business-name">Business name<span class="required">*</span></label>
+                    <input type="text" name="business-name" pattern="([A-Z]|[a-z])[a-z]+" id="business-name" required>
+                </div>
+                <div class="input-label">
+                    <label for="business-address">Business address</label>
+                    <input type="text" name="business-address" id="business-address">
+                </div>
+                <div class="input-label">
+                    <label for="business-website">Business website</label>
+                    <input type="url" name="business-website" id="business-website">
+                </div>
+                <div class="extended-input-label">
+                    <label for="business-description">Business description</label>
+                    <textarea name="business-description" id="business-description"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Membership level</legend>
+                <div class="flex-col">
+                    <label><input type="radio" name="user-danger" value="yes"> Non-profit ($100)</label>
+                    <label><input type="radio" name="user-danger" value="maybe"> Bronze ($200)</label>
+                    <label><input type="radio" name="user-danger" value="no"> Silver ($400)</label>
+                    <label><input type="radio" name="user-danger" value="no"> Gold ($1000)</label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Send Application" class="submit-button">
+        </form>
+    </main>
+    <footer>
+        <div class="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Phone: <a href="tel:2084442222">(208) 404-2222</a>
+        </p>
+        <p>
+            Email: <a href="mailto:info@rexburgcommerce.org">info@rexburgcommerce.org</a>
+        </p>
+        <p>
+            50 W Main Street, Rexburg, ID
+        </p>
+        </div>
+        <div class="social">
+        <a href="https://facebook.com/rexburg-chamber-of-commerce" target="_blank"><img src="images/facebook-icon.webp" alt="facebook icon"></a>
+        <a href="https://reddit.com/r/rexburgcoc"><img src="images/reddit-icon.webp" alt="reddit icon"></a>
+        <p><a href="info.html">Additional Information</a></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

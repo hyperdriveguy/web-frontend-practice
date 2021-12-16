@@ -1,19 +1,67 @@
-{ 'MY-PC-ER': {
-		'contact': {
-			'phone': '208-856-0435',
-			'email': 'help@mypcer.com'
+{
+	"businesses": [
+		{
+			"name": "MY-PC-ER",
+			"contact": {
+				"phone": "208-856-0435",
+				"email": "help@mypcer.com"
+			},
+			"logo": "https://cdn-akaci.nitrocdn.com/hlsnWJICPRyuXKIcLYznayTvWJYOtXjt/assets/static/optimized/rev-d128ff7/wp-content/uploads/Asset-32-small.png",
+			"website": "mypcer.com"
 		},
-		'logo': 'https://cdn-akaci.nitrocdn.com/hlsnWJICPRyuXKIcLYznayTvWJYOtXjt/assets/static/optimized/rev-d128ff7/wp-content/uploads/Asset-32-small.png',
-		'website': 'https://mypcer.com/'
-	},
-	'QuisTech': {
-		'contact': {
-			'phone': '208-656-5805',
-			'email': ''
+		{
+			"name": "QuisTech",
+			"contact": {
+				"phone": "208-656-5805",
+				"email": ""
+			},
+			"logo": "https://lh3.googleusercontent.com/0uQodiy0sJIpNZP2YsO9IfzqozcSLP-W2Z7sxEBX8p5QMBf12-9sXCftG8fGbfqFnw58F_PD=w1080-h608-p-no-v0",
+			"website": "quistechrepair.business.site"
 		},
-		'logo': 'https://lh3.googleusercontent.com/0uQodiy0sJIpNZP2YsO9IfzqozcSLP-W2Z7sxEBX8p5QMBf12-9sXCftG8fGbfqFnw58F_PD=w1080-h608-p-no-v0',
-		'website': 'https://quistechrepair.business.site/'
-	},
-	
-		
+		{
+			"name": "GamePulse",
+			"contact": {
+				"phone": "208-437-8060",
+				"email": "rexgamepulse@gmail.com"
+			},
+			"logo": "images/game-pulse-logo.jpg",
+			"website": "business.facebook.com/GamePulse"
+		},
+		{
+			"name": "Beehive Credit Union",
+			"contact": {
+				"phone": "208-656-1000",
+				"email": "bfcu@beehive.org"
+			},
+			"logo": "https://beehive.org/wp-content/uploads/2021/08/beehive-logo-2.png",
+			"website": "beehive.org"
+		},
+		{
+			"name": "Baby Swag",
+			"contact": {
+				"phone": "208-271-9997",
+				"email": ""
+			},
+			"logo": "https://rexburgbabyswag.com/wp-content/uploads/2021/07/bs-horizontal.png",
+			"website": "rexburgbabyswag.com"
+		},
+		{
+			"name": "Righteous Slice",
+			"contact": {
+				"phone": "208-269-9885",
+				"email": ""
+			},
+			"logo": "https://www.righteousslice.com/wp-content/uploads/2018/03/Righteous-Slice-The-Logo-300x90.png",
+			"website": "www.righteousslice.com"
+		},
+		{
+			"name": "Da Pineapple Grill",
+			"contact": {
+				"phone": "208-356-4398",
+				"email": "Ono@pineapplegrill.com"
+			},
+			"logo": "https://www.pineapplegrill.com/wp-content/uploads/2019/06/DPG-LOGO-2019.png",
+			"website": "www.pineapplegrill.com"
+		}
+	]
 }
